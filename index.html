@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <title>Pac-Man</title>
+        <link rel="stylesheet" href="./style.css" />
+        <script src="./src/constants.js" defer></script>
+        <script src="./src/table.js" defer></script>
+        <script src="./src/nodes.js" defer></script>
+        <script src="pacman.js" defer></script>
+        <script src="./src/index.js" defer></script>
+    </head>
+    <body>
+        <main id="game">
+            <div id="score"></div>
+            <div id="lives"></div>
+            <div id="maze">
+                <div id="pacman" class="entity">
+                    <img id="pacman-sprite" src="./assets/images/pacman/pacman-0.png" />
+                </div>
+                <div id="blinky" class="entity">
+                    <img id="blinky-sprite" src="./assets/images/ghosts/ghost-blinky-down.png" />
+                </div>
+                <div id="pinky" class="entity">
+                    <img id="pinky-sprite" src="./assets/images/ghosts/ghost-pinky-down.png" />
+                </div>
+                <div id="inky" class="entity">
+                    <img id="inky-sprite" src="./assets/images/ghosts/ghost-inky-down.png" />
+                </div>
+                <div id="clyde" class="entity">
+                    <img id="clyde-sprite" src="./assets/images/ghosts/ghost-clyde-down.png" />
+                </div>
+            </div>
+        </main>
+    </body>
+</html>

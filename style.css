@@ -1,0 +1,74 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+*::before,
+*::after {
+  box-sizing: inherit; }
+
+html {
+    height: 100%;
+    box-sizing: border-box;
+    color: white;
+}
+
+body {
+    display: grid;
+    margin: 0;
+    margin-right: 20%;
+    height: 100%;
+    background-image: url("./assets/images/background.jpg");
+    background-size: cover;
+    background-position: bottom right;
+}
+
+#game {
+    position: flex;
+    flex-direction: column;
+    width: 560px;
+    height: 720px;
+    margin: auto;
+}
+#maze {
+    position: relative;
+    background-color:rgb(167, 167, 167);
+    border: 20px solid rgb(197, 240, 7);
+    border-radius: 10px;
+    box-shadow: 10px 10px 30px rgb(197, 240, 7);
+}
+
+.entity {
+    /*
+     * Using absolute positioning, we can position our entities
+     * within our game using the CSS properties `left` (x) and `top` (y).
+     */
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    z-index: +1;
+    /* border: 2px rgb(151, 151, 230) solid; */
+
+}
+
+.entity img {
+    width: 18px;
+    height: 18px;
+}
+
+.raster {
+    background-color: white;
+    border: 2px rgb(151, 151, 230) solid;
+}
+
+.pacman_temp {
+    background-color: yellow;
+    width: 15px;
+    height: 15px;
+    border-radius: 100%;
+}
+
+.endscreen {
+    position: absolute;
+    z-index: 2;
+}
